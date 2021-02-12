@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import axios from "./axios";
+import axios from "../config/axios";
 import "./Row.css";
 
 const Row = ({ title, fetchUrl, isLargeRow = false }) => {
