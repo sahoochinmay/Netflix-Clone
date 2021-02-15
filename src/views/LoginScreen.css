@@ -1,73 +1,160 @@
-.loginScreen{
-    position: relative;
-    height: 100%;
-    background: url("../images/home-bg.jpg") center no-repeat;
-    background-size: cover;
+.loginScreen {
+  position: relative;
+  height: 100%;
 }
-.loginScreen__logo{
-    position: fixed;
-    left: 0;
-    width: 150px;
-    object-fit: contain;
-    padding-left: 20px;
+.loginScreen__background {
+  background: url("../images/home-bg.jpg") center no-repeat;
+  background-size: cover;
 }
-.loginScreen__button{
-    position: fixed;
-    right: 20px;
-    top: 20px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: white;
-    background-color: #e50914;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
+.loginScreen__logo {
+  position: absolute;
+  left: 0;
+  width: 150px;
+  object-fit: contain;
+  padding-left: 20px;
 }
-.loginScreen__gradient{
-    width: 100%;
-    z-index: 1;
-    height: 100vh;
-    /* background: rgba(0, 0, 0, 0.616); */
-    background: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 40%,rgba(0,0,0,0) 75%,rgba(0,0,0,.8) 100%);
+.loginScreen__button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #e50914;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
 }
-.loginScreen__body{
-    color: white;
-    position: absolute;
-    top: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 100%;
+.loginScreen__gradient {
+  width: 100%;
+  z-index: 1;
+  height: 100vh;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.856) 0,
+    rgba(0, 0, 0, 0.534) 40%,
+    rgba(0, 0, 0, 0.39) 75%,
+    rgba(0, 0, 0, 0.938) 100%
+  );
 }
-.loginScreen__body > h1{
-    font-size: 2.825rem;
+.loginScreen__body {
+  color: white;
+  position: absolute;
+  top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
 }
-.loginScreen__body > h2{
-    font-size: 2rem;
-    font-weight: 400;
-    margin-bottom: 30px;
+.loginScreen__body > h1 {
+  font-size: 2.925rem;
 }
-.loginScreen__body > h3{
-    font-size: 1.3rem;
-    font-weight: 400;
+.loginScreen__body > h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
-.loginScreen__input{
-    margin: 20px;
+.loginScreen__body > h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
 }
-.loginScreen__input > form > input{
-    padding: 8px;
-    outline-width: 0;
-    height: 30px;
-    width: 30%;
-    border: none;
-    max-height: 600px;
+.loginScreen__input {
+  margin: 20px;
 }
-.loginScreen__getStarted{
-    padding: 14px 20px;
-    font-size: 1rem;
-    color: white;
-    background-color: #e50914;
-    border: none;
-    font-weight: 600;
-    cursor: pointer;
+.loginScreen__input > form > input {
+  padding: 8px;
+  outline-width: 0;
+  height: 30px;
+  width: 40%;
+  border: none;
+  max-height: 600px;
+}
+.loginScreen__getStarted {
+  padding: 14px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #e50914;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+.devider {
+  width: 100%;
+  height: 10px;
+  background: #222;
+}
+/* section: row 1 */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding: 80px 20px;
+}
+.flex-container h1 {
+  font-size: 45px;
+}
+.flex-container p {
+  font-size: 22px;
+}
+.flex-container .text__box {
+  padding: 50px;
+}
+.flex-container .row1__col1 {
+  flex: 50%;
+}
+.flex-container .row1__col2 {
+  flex: 50%;
+  position: relative;
+}
+.flex-container .row2__col1{
+  flex: 40%;
+}
+.flex-container .row2__col1 img{
+  max-height: 300px;
+}
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+.video__box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img__box{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -60px;
+}
+
+.faq{
+  padding: 70px 20px 50px 20px;
+  text-align: center;
+  color: white;
+}
+.faq h1{
+  font-size: 2.7rem;
+  margin-bottom: 40px;
+}
+.faq h3{
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 90px;
+}
+.faq__box{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  background: rgb(63, 63, 63);
+  padding: 10px 20px;
+  max-width: 670px;
+  font-size: 30px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-top: 10px;
 }
