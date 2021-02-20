@@ -1,0 +1,11 @@
+.plan__box{
+    padding: 10px;
+    position: relative;
+    color: rgb(209, 207, 207);
+}
+.plan__box button{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    padding: 8px 10px;
+}
