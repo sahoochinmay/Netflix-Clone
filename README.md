@@ -3,6 +3,10 @@
 Here i use TMDB API
 
 
+## [Live Demo](https://sahoochinmay.github.io/Netflix-Clone/)
+
+## [Checkout Video](https://youtu.be/1-KZqqH0eCY)
+
 ### Connect with me:
 
 [<img align="left" alt="codeSTACKr | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
